@@ -1,39 +1,33 @@
 function startStudy(){
 
+const topic =
 document
-.getElementById("content")
-.innerHTML=
+.getElementById("topic")
+.value;
 
-`
-<h2>
-Study Mode
-</h2>
-
-<p>
-Modul pembelajaran
-akan ditampilkan
-di sini.
-</p>
-`;
-
-}
-
-function startQuiz(){
+const data =
+knowledgeBase[topic];
 
 document
 .getElementById("content")
 .innerHTML=
 
 `
+
 <h2>
-Quiz Mode
+${data.title}
 </h2>
 
-<p>
-Engine Quiz akan
-dibangun pada
-Tahap 3.
-</p>
+<pre style="
+white-space:pre-wrap;
+font-size:16px;
+line-height:1.6;
+">
+
+${data.summary}
+
+</pre>
+
 `;
 
 }
