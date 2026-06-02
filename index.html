@@ -1,17 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
+
 <head>
+
 <meta charset="UTF-8">
-<title>KIDECO MASTER MIND</title>
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+KIDECO MASTER MIND v5.0
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
 </head>
 
 <body>
 
-<h1>KIDECO MASTER MIND v5.0</h1>
+<div class="container">
 
-<h3>Repository berhasil berjalan</h3>
+<h1>
+KIDECO MASTER MIND
+</h1>
 
-<p>Selamat datang di KIDECO MASTER MIND.</p>
+<h3>
+Enterprise Learning Edition
+</h3>
+
+<hr>
+
+<label>
+Nama Peserta
+</label>
+
+<input
+type="text"
+id="playerName">
+
+<br><br>
+
+<label>
+Level
+</label>
+
+<select id="level">
+
+<option value="beginner">
+Beginner
+</option>
+
+<option value="intermediate">
+Intermediate
+</option>
+
+<option value="expert">
+Expert
+</option>
+
+</select>
+
+<br><br>
+
+<label>
+Topik
+</label>
+
+<select id="topic">
+
+<option>
+Innovation & Continuous Improvement
+</option>
+
+<option>
+7 QC Tools
+</option>
+
+<option>
+8 Langkah Perbaikan
+</option>
+
+<option>
+12 Langkah Perbaikan
+</option>
+
+<option>
+DMAIC
+</option>
+
+<option>
+Design Thinking
+</option>
+
+<option>
+PDCA
+</option>
+
+<option>
+Sejarah Inovasi & Tokohnya
+</option>
+
+<option>
+Quality Management
+</option>
+
+<option>
+SOLUSI
+</option>
+
+</select>
+
+<br><br>
+
+<button onclick="startStudy()">
+
+📚 STUDY MODE
+
+</button>
+
+<button onclick="startQuiz()">
+
+🎯 QUIZ MODE
+
+</button>
+
+<hr>
+
+<div id="content">
+
+Selamat datang di
+KIDECO MASTER MIND
+
+</div>
+
+</div>
+
+<script src="knowledge-base.js"></script>
+
+<script src="questions-beginner.js"></script>
+
+<script src="questions-intermediate.js"></script>
+
+<script src="questions-expert.js"></script>
+
+<script src="app.js"></script>
 
 </body>
+
 </html>
